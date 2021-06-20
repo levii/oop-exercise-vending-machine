@@ -1,6 +1,6 @@
 import { VendingMachine } from './VendingMachine';
 
-const scenario1 = () => {
+const scenario1 = (): void => {
     const money = 100;
     const drinkType = 0;
     const machine = new VendingMachine();
@@ -17,7 +17,7 @@ const scenario1 = () => {
     );
 };
 
-const scenario2 = () => {
+const scenario2 = (): void => {
     const money = 200;
     const drinkType = 0;
     const machine = new VendingMachine();
@@ -34,7 +34,7 @@ const scenario2 = () => {
     );
 };
 
-const scenario3 = () => {
+const scenario3 = (): void => {
     const money = 500;
     const drinkType = 2;
     const machine = new VendingMachine();
@@ -51,7 +51,7 @@ const scenario3 = () => {
     );
 };
 
-const scenario4 = () => {
+const scenario4 = (): void => {
     const money = 100;
     const drinkType = 1;
     const machine = new VendingMachine();
