@@ -1,0 +1,42 @@
+{
+  "name": "oop-exercise-vending-machine",
+  "version": "0.0.1",
+  "main": "index.js",
+  "repository": "https://github.com/levii/oop-exercise-vending-machine.git",
+  "author": "Levii, inc. <contact@levii.co.jp>",
+  "license": "MIT",
+  "devDependencies": {
+    "@types/jest": "^26.0.23",
+    "@typescript-eslint/eslint-plugin": "^4.27.0",
+    "@typescript-eslint/parser": "^4.27.0",
+    "eslint": "^7.29.0",
+    "eslint-config-prettier": "^8.3.0",
+    "jest": "^27.0.4",
+    "prettier": "^2.3.1",
+    "ts-jest": "^27.0.3",
+    "typescript": "^4.3.4"
+  },
+  "scripts": {
+    "build": "tsc -p tsconfig.json",
+    "test": "jest --env=jsdom --silent=false",
+    "lint": "eslint './{lib,src,test}/**/*.{ts,tsx}'",
+    "lint-fix": "eslint --fix './{lib,src,test}/**/*.{ts,tsx}' && prettier --write './{lib,src,test}/**/*.{ts,tsx}'"
+  },
+  "jest": {
+    "moduleFileExtensions": [
+      "js",
+      "ts"
+    ],
+    "verbose": true,
+    "silent": false,
+    "testRegex": "[^/.]+\\.(test|spec)\\.(tsx?|jsx?)$",
+    "transform": {
+      "^.+\\.(ts)$": "ts-jest"
+    },
+    "globals": {
+      "ts-jest": {
+        "tsconfig": "tsconfig.json"
+      }
+    }
+  }
+}
